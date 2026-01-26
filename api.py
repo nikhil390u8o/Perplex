@@ -13,7 +13,7 @@ def home():
         'status': 'success',
         'message': 'Welcome to Perplexity AI API',
         'apidev': '@ll_PANDA_BBY_ll',
-        'api_channel': '@sxyaru,
+        'api_channel': '@sxyaru',
         'documentation': {
             'endpoint': '/api/ask',
             'method': 'GET',
@@ -232,8 +232,8 @@ def perplexity_ask():
         return jsonify({
             'status': 'error',
             'message': 'Prompt parameter is required',
-            'apidev': '@ISmartCoder',
-            'api_channel': '@abirxdhackz'
+            'apidev': '@ll_PANDA_BBY_ll',
+            'api_channel': '@sxyaru'
         }), 400
     
     mode = request.args.get('mode', 'concise')
