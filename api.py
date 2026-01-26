@@ -12,8 +12,8 @@ def home():
     return jsonify({
         'status': 'success',
         'message': 'Welcome to Perplexity AI API',
-        'apidev': '@ISmartCoder',
-        'api_channel': '@abirxdhackz',
+        'apidev': '@ll_PANDA_BBY_ll',
+        'api_channel': '@sxyaru,
         'documentation': {
             'endpoint': '/api/ask',
             'method': 'GET',
@@ -89,14 +89,14 @@ def home():
                     'mode': 'Response mode used',
                     'model': 'Model used',
                     'timestamp': 'Unix timestamp',
-                    'apidev': '@ISmartCoder',
-                    'api_channel': '@abirxdhackz'
+                    'apidev': '@ll_PANDA_BBY_ll',
+                    'api_channel': '@sxyaru'
                 },
                 'error': {
                     'status': 'error',
                     'message': 'Error description',
-                    'apidev': '@ISmartCoder',
-                    'api_channel': '@abirxdhackz'
+                    'apidev': '@ll_PANDA_BBY_ll',
+                    'api_channel': '@sxyaru'
                 }
             },
             'status_codes': {
@@ -392,8 +392,8 @@ def perplexity_ask():
                 'status': 'error',
                 'message': f'Failed to fetch data: HTTP {response.status_code}',
                 'response_text': response.text[:500],
-                'apidev': '@ISmartCoder',
-                'api_channel': '@abirxdhackz'
+                'apidev': '@ll_PANDA_BBY_ll',
+                'api_channel': '@sxyaru'
             }), 500
         
         full_response = response.text
@@ -410,8 +410,8 @@ def perplexity_ask():
             'mode': mode,
             'model': model,
             'timestamp': current_time,
-            'apidev': '@ISmartCoder',
-            'api_channel': '@abirxdhackz'
+            'apidev': '@ll_PANDA_BBY_ll',
+            'api_channel': '@sxyaru'
         }
         
         if debug_mode:
@@ -423,24 +423,24 @@ def perplexity_ask():
         return jsonify({
             'status': 'error',
             'message': 'Request timeout',
-            'apidev': '@ISmartCoder',
-            'api_channel': '@abirxdhackz'
+            'apidev': '@ll_PANDA_BBY_ll',
+            'api_channel': '@sxyaru'
         }), 504
         
     except requests.exceptions.RequestException as e:
         return jsonify({
             'status': 'error',
             'message': f'Request failed: {str(e)}',
-            'apidev': '@ISmartCoder',
-            'api_channel': '@abirxdhackz'
+            'apidev': '@ll_PANDA_BBY_ll',
+            'api_channel': '@sxyaru'
         }), 500
         
     except Exception as e:
         return jsonify({
             'status': 'error',
             'message': f'Internal error: {str(e)}',
-            'apidev': '@ISmartCoder',
-            'api_channel': '@abirxdhackz'
+            'apidev': '@ll_PANDA_BBY_ll',
+            'api_channel': '@sxyaru'
         }), 500
 
 if __name__ == '__main__':
